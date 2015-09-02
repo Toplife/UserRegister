@@ -19,7 +19,7 @@ public class DBUtils {
 	
 	public static Connection getConnection(){
 		try {
-			return DriverManager.getConnection("jdbc:oracle:thin:@ITA-031-W7.corp.oocl.com:1521:XE","David","david");
+			return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","David","david");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
